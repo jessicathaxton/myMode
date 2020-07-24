@@ -1,0 +1,557 @@
+* {
+    margin: 0; padding: 0; border: 0; box-sizing: border-box;
+}
+
+/* ALL STYLES - Phone, Tablet, Desktop */
+
+body {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    /*font-family: 'Poiret One', cursive;*/
+    display: flex;
+    flex-direction: column;
+    height: 100%; min-height: 100vh;
+    background-image: url("../images/sil_jump.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(32, 42, 64); /* used if image not available */
+    color: #f2f2f2;
+}
+
+h1, h2, h3, .ques, input[type='submit'] {
+    font-family: 'Poiret One', cursive;
+}
+
+h1, h2, h3 {
+    text-shadow: 0 0 5px black;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Poiret One', cursive;
+    color: rgb(0, 176, 192);
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+a:visited {
+    color: rgb(0, 128, 139);
+}
+
+li {
+    list-style-type: none;
+}
+
+header {
+    flex: 0 1 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    background-color: rgba(19, 19, 19, 0.8);
+}
+
+#headNav {
+    flex: 1 0 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    border-bottom: 1px solid rgba(19, 19, 19);
+    padding-top: 20px;
+}
+
+#headNav ul {
+    flex: 1 0 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px 50px;
+}
+
+#headNav ul li {
+    width: 100%;
+    line-height: 48px;
+    font-family: 'Poiret One', cursive;
+    font-size: 24px;
+    margin: 10px auto;
+}
+
+li a {
+    display: block;
+}
+
+main {
+    flex: 4 1 80%;
+    background-color: rgba(19, 19, 19, 0.8);
+}
+
+#privMain {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+h1, #privacy h2 {
+    color: rgb(0, 176, 192);
+}
+
+#privMain h1 {
+    margin: 20px auto;
+}
+
+#privacy {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#privacy p {
+    text-align: justify !important;
+}
+
+footer {
+    height: 100px;
+    border-top: 1px solid rgba(19, 19, 19);
+    background-color: rgba(19, 19, 19, 0.8);
+    padding: 20px;
+}
+
+#appLogo {
+    width: 300px;
+    margin: 40px auto 10px;
+}
+
+#privacy {
+    text-align: left;
+}
+
+#info, .about {
+    padding: 10px 10px;
+}
+
+.infoDet {
+    padding: 15px 10px;
+    position: relative;
+}
+
+#info h1, #signUpForm h1 {
+    line-height: 2em;
+}
+
+.infoDet img {
+    margin: 24px;
+}
+
+#outImg {
+    display: none;
+}
+
+.infoP p {
+    padding: 12px 0;
+}
+
+.faqP {
+    margin: 20px auto;
+}
+
+.about h1 {
+    font-size: 38px;
+}
+
+.faqP .qa {
+    text-align: justify;
+    margin: 20px auto;
+    padding: 12px 20px;
+}
+
+.ques {
+    font-weight: bold;
+    font-size: 24px;
+    color: #00b0c0;
+}
+
+#signUp, #logIn, #manage, #page {
+    align-self: center;
+    padding: 10px 20px;
+}
+
+#userMain {
+    display: flex;
+    flex-flow: column;
+}
+
+
+#inspDiv {
+    padding: 20px;
+    flex: 0 1 20%;
+}
+
+#userDash {
+    flex: 1 1 80%;
+    display: flex;
+    flex-flow: column;
+}
+
+#userGoals, #userHistory {
+    padding: 10px;
+    flex: 1 1 50%;
+    display: flex;
+    flex-flow: column;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+}
+
+#goalTable {
+    border: 1px solid black;
+    background-color: rgba(19, 19, 19, 0.8);
+    border-collapse: collapse;
+}
+
+th {
+    font-family: 'Poiret One', cursive;
+    color: rgb(0, 176, 192);
+}
+
+#goalTable tr th {
+    text-align: left;
+    font-size: 1.25em;
+    padding: 20px 5px;
+    border: 1px solid black;
+}
+
+#goalTable tr td {
+    font-size: 18px;
+    line-height: 1.5em;
+    border: 1px solid black;
+}
+
+#trackTable, #trackTable th, #trackTable td, .admin, .admin td, .admin th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.admin {
+    margin: 40px auto;
+}
+
+#history {
+    padding-top: 20px;
+}
+
+#history h2,#logForm h2, #userGoals h2 {
+    padding: 20px;
+    color: rgb(0, 176, 192);
+}
+
+#trackTable {
+    width: 100%;
+    background-color: rgba(19, 19, 19, 0.8);
+}
+#trackTable td, #trackTable th, .admin td, .admin th{
+    padding: 5px;
+}
+
+td.total {
+    text-align: right;
+    font-weight: bold;
+}
+
+.welcomeMsg {
+    position: absolute; right: 10px; top: 10px;
+    font-size: 14px;
+    color: #00909E;
+}
+
+.welcomeMsg a {
+    color: #00909E;
+} 
+
+/* ------ BUTTON & NAV ANIMATION ------ */
+.animated {
+    cursor: pointer;
+    outline: 0px solid;
+    outline-color: rgba(19, 19, 19, 0.8);
+    transition: all 400ms cubic-bezier(0.2, 0, 0, 0.8);
+}
+
+.animated:hover {
+    color: rgb(255, 69, 69);
+    outline: 2px solid rgb(255, 69, 69);
+    outline-offset: 10px;
+}
+
+/* ------ FORM STYLES ------ */
+.passForm {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.passForm input[type='password'], .passForm input[type='submit'] {
+    flex: 1 1 40%;
+    padding: 5px;
+}
+
+form {
+    padding: 50px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formDiv {
+    display: flex;
+    flex-direction: row wrap;
+    padding: 5px;
+    margin: 5px 5px 25px 5px;
+    position: relative;
+}
+
+.formDiv label {
+    width: 40%;
+    margin: auto;
+    text-align: right;
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+.formDiv input[type='text'], .formDiv input[type='password'], .formDiv textarea, .formDiv select {
+    width: 60%;
+    height: 50px;
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+#subButton, #loginButton, #trackButton, #aboutButton, #signButton {
+    font-size: 1.5em;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 0.075em;
+    background-color: rgb(255, 69, 69);
+    color: black;
+    transition: all 400ms;
+}
+
+#subButton:hover, #loginButton:hover, #trackButton:hover, #aboutButton:hover, #signButton:hover {
+    cursor: pointer;
+    background-color: rgb(235, 44, 44);
+    color: white;
+}
+
+#loginButton, #aboutButton {
+    background-color: rgb(0, 176, 192);
+}
+
+#loginButton:hover, #aboutButton:hover {
+    background-color: rgb(0, 128, 139);
+}
+
+.buttonDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.hint{
+    display: block;
+    position: absolute; bottom: 5px; right: 10px;
+    font-size: 12px;
+    color: black;
+}
+
+#logForm label {
+    width: 70%;
+    padding: 0 1.5em;
+    text-align: left;
+}
+
+#logForm input[type='text'] {
+    width: 30%;
+}
+
+#radioLog {
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+}
+
+#radioSection {
+    padding-top: 20px;
+}
+
+.passForm {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: space-between;
+}
+
+#newPass {
+    border: 1px solid rgb(0, 176, 192);
+    max-width: 125px;
+}
+
+#changePass {
+    background-color: rgb(0, 176, 192);
+    font-weight: bold;
+    font-size: 14px;
+    max-width: 50px;
+}
+
+#changePass:hover {
+    background-color: rgb(0, 128, 139);
+    color: white;
+    font-weight: normal;
+}
+
+
+
+/* TABLET STYLES - - - - - - - - - - - - - - - -  */
+@media screen and (min-width: 650px) {
+    #headNav {
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+    }
+
+    #headNav ul {
+        margin-left: auto;
+        max-width: 800px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    #headNav ul li {
+        width: 30%;
+        max-width: 200px;
+        line-height: 72px;
+        /*align-self: center;*/
+    }
+
+    .infoP, .infoImg {
+        flex: 1 1 50%;
+        align-self: center;
+    }
+
+    .infoP p {
+        padding: 24px 0;
+    }
+
+    #userDash {
+        flex: 1 0 90%;
+        display: flex;
+        flex-flow: column;
+    }
+    
+    #userGoals, #userHistory {
+        padding: 30px;
+    }
+
+    form {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    #signUp, #logIn {
+        padding-right: 60px;
+    }
+
+}
+
+
+
+/* DESKTOP STYLES - - - - - - - - - - - - - - - -  */
+
+@media screen and (min-width: 1025px) {
+    #headNav {
+        position: relative;
+    }
+
+    #appLogo {
+        position: absolute; top: -10px; left: 50px;
+        width: 250px;
+    }
+
+    #subButton, #loginButton {
+        margin-right: 10px;
+    }
+
+    main {
+        display: flex;
+        flex-flow: row;
+        padding: 0 40px;
+    }
+
+    #info, .about, #signUp, #logIn, #manage, #page {
+        flex: 1 1 50%;
+        align-self: center;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .infoImg {
+        flex: 1 1 70%;
+    }
+
+    .out {
+        margin: 40px auto 10px;
+    }
+
+    #outImg {
+        display: block;
+        width: 800px;
+        margin-top: 40px;
+    }
+
+    .infoDet {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .infoDet h1 {
+        float: none;
+        margin: 0;
+    }
+
+    #userDash {
+        display: flex;
+        flex-flow: row;
+    }
+
+    #userGoals, #userHistory {
+        padding: 50px;
+    }
+
+    .faqP {
+        max-width: 850px;
+    }
+
+    .faqP .qa {
+        padding: 12px 48px;
+    }
+
+    #about2 {
+        text-align: left;
+    }
+    
+    #about2 h1 {
+        text-align: center;
+        line-height: 2em;
+    }
+
+    #about1 {
+        margin-right: 50px;
+    }
+
+    #about2 {
+        margin-left: 50px;
+    }
+
+}
+
+
+
