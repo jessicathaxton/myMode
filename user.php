@@ -58,8 +58,6 @@
         $userID = $row['id'];
         //echo "userID assigned: {$userID}";
     } // get user ID
-
- // GET BOREDAPI SUGGESTION
     
 
  // CREATING HABITS -----------------------------------------------------
