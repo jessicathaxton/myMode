@@ -9,10 +9,12 @@ BUILD STATUS
 	FUNCTIONAL, still IN DEVELOPMENT
 	Wish List Includes:
  	- add more engaging graphics and charts populated using the mySQL data
- 	- test jQuery animations in lieu of CSS animations, creating an interactive interface to better engage end users
-	- add filters and custom reporting options in the admin console
-	- add sort options to the user.php logs to allow for customized viewing
+ 	- test jQuery animations in lieu of CSS animations, creating an exciting, interactive interface to better engage end users
+	- add filters and custom reporting options in the admin console manage.php
+	- add sort and filter options to the user.php logs to allow for customized viewing
+	- admin console - add 'role selection' to allow admins to change user roles
 	- allow users to edit or change their habit goals
+	- allow editing of specific past logs, selected through sort and filter options
 	- allow users to choose their own local timezone
 
 LANGUAGES USED
@@ -20,7 +22,7 @@ LANGUAGES USED
 	CSS3
 	JavaScript
 	jQuery
-	PHP
+	PHP7
 	MySQL
 
 SITE COLORS
@@ -62,7 +64,7 @@ INSTALLATION
 	- Place the files in a subfolder inside your 'htdocs' folder (or equivalent; wherever your live website files live).
 	- Inside PHPmyAdmin, create a mySQL database. In the following step, you will need to create a connect script to this database.
 	- Inside your main folder (xampp for me), create a folder called 'req'. This is where your connect script needs to be.
-		- My file structure: 	C:\xampp\req
+		- My file structure: 	C:\xampp\req    and project lives in C:\xampp\htdocs\233p\final
 		- Connect script should be named "connect.php"
 		- Connect script should use PDO, which is used throughout the project. Using MySQLi may cause conflicts.
 
@@ -83,7 +85,7 @@ HOW TO USE?
 
 --- ADMIN ---
 	Go to the admin portal, manage.php. 
-	Sign in with a user who has admin priviledges (currently granted through PHPmyAdmin).
+	Sign in with a user who has admin priviledges (currently granted through PHPmyAdmin, though I want to add a 'role selection' feature in the admin console).
 	Once signed in, you can view a variety of logs, change user passwords, and a few other things.
 
 CREDITS
@@ -94,11 +96,6 @@ CREDITS
 CONTRIBUTE
 	MyMode currently does not have an official feedback forum. If interest is generated, the developer will pursue a forum creation. 
 	For now, please feel free to send C&C or suggestions for code improvement to the developer directly at support@jthaxton.cocc-cis.com.
-
-LICENSE
-	No licenses are granted for this project. 
-	Please do not reproduce or redistribute, in whole or part, without prior written permission from the developer.
-	That said, feel free to look at the code for ideas and inspiration!
 
 COPYRIGHT
 	2020 © Jessica Thaxton 
